@@ -26,14 +26,10 @@ public class Program {
 
             client.listenForMessage();
             client.sendMessage();
-        }
-        catch (UnknownHostException e){
+        } catch (UnknownHostException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
             e.printStackTrace();
         }
-        catch (IOException e){
-            e.printStackTrace();
-        }
-
     }
-
 }
